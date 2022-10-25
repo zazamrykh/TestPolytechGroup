@@ -1,0 +1,16 @@
+Index: src/test/java/GroupPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/GroupPage.java b/src/test/java/GroupPage.java
+new file mode 100644
+--- /dev/null	(date 1666715696528)
++++ b/src/test/java/GroupPage.java	(date 1666715696528)
+@@ -0,0 +1,6 @@
++public class GroupPage {
++
++    public void searchPolytechGroup(String groupName){
++
++    }
++}
