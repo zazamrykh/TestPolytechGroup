@@ -1,0 +1,42 @@
+Index: src/test/java/MainTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.api.Test;\r\n\r\npublic class MainTest {\r\n    @Test\r\n    public void main(String[] args) {\r\n        System.out.println(\"Hello world!\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/MainTest.java b/src/test/java/MainTest.java
+--- a/src/test/java/MainTest.java	(revision b5bc95c8bd772989229976422eee8fbf7e61f1e8)
++++ b/src/test/java/MainTest.java	(date 1666715296683)
+@@ -2,7 +2,7 @@
+ 
+ public class MainTest {
+     @Test
+-    public void main(String[] args) {
++    public void main() {
+         System.out.println("Hello world!");
+     }
+ }
+Index: src/test/java/GroupPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/GroupPage.java b/src/test/java/GroupPage.java
+new file mode 100644
+--- /dev/null	(date 1666715554076)
++++ b/src/test/java/GroupPage.java	(date 1666715554076)
+@@ -0,0 +1,13 @@
++import org.openqa.selenium.By;
++
++import static com.codeborne.selenide.Selenide.$;
++
++public class GroupPage {
++
++    public void searchPolytechGroup(String groupName)
++    {
++        $(By.xpath()).setValue(groupName);
++
++    }
++
++}
